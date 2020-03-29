@@ -1,9 +1,12 @@
 package bank.domain;
 
+import Integration.IObserver;
+import bank.service.ISubject;
+
 import java.util.*;
 
 
-public class Account {
+public class Account implements ISubject {
 	long accountnumber;
 	Collection<AccountEntry> entryList = new ArrayList<AccountEntry>();
 	Customer customer;
@@ -54,6 +57,23 @@ public class Account {
 	}
 	public Collection<AccountEntry> getEntryList() {
 		return entryList;
+	}
+
+	@Override
+	public void removeObserver(IObserver observer) {
+		observerList.remove(observer);
+	}
+
+	@Override
+	public void addObserver(IObserver observer) {
+		observerList.add(observer);
+	}
+
+	@Override
+	public void doNotify(Account account) {
+		for(IObserver iObserver :observerList){
+			iObserver.update(account);
+		}
 	}
 
 }

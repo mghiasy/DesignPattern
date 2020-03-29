@@ -8,7 +8,7 @@ import bank.dao.IAccountDAO;
 import bank.domain.Account;
 import bank.domain.Customer;
 
-
+//both AccountService and Account should implement from ISubject to support all the required transactions
 public class AccountService implements IAccountService,ISubject {
 	private IAccountDAO accountDAO;
 
@@ -61,7 +61,6 @@ public class AccountService implements IAccountService,ISubject {
 		doNotify(toAccount);
 
 	}
-
 	@Override
 	public void removeObserver(IObserver observer) {
 		observerList.remove(observer);
@@ -78,4 +77,5 @@ public class AccountService implements IAccountService,ISubject {
 			iObserver.update(account);
 		}
 	}
+
 }
