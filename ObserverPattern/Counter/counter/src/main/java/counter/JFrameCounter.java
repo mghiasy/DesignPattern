@@ -10,7 +10,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class JFrameCounter extends JFrame implements ISubject {
+//this class is just for communiacting with client
+//we remove donotify from here
+public class JFrameCounter extends JFrame{
     private JButton jButtonIncrement = new JButton();
     private JButton jButtondecrement = new JButton();
     private JButton jButtonundo = new JButton();
@@ -18,6 +20,8 @@ public class JFrameCounter extends JFrame implements ISubject {
     
     private Counter counter;
 
+    //in constructor we create counter and frames
+    //Also call add observer here
     public JFrameCounter() {
         try {
             jbInit();
@@ -28,6 +32,9 @@ public class JFrameCounter extends JFrame implements ISubject {
             rectframe.setVisible(true);
             OvalFrame ovalframe = new OvalFrame();
             ovalframe.setVisible(true);
+            counter.addObserver(textframe);
+            counter.addObserver(rectframe);
+            counter.addObserver(ovalframe);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -86,17 +93,14 @@ public class JFrameCounter extends JFrame implements ISubject {
         this.getContentPane().add(jButtonundo, null);
         this.getContentPane().add(jButtondecrement, null);
         this.getContentPane().add(jButtonIncrement, null);
-        doNotify(counter);
     }
 
     private void jButtonIncrement_actionPerformed(ActionEvent e) {
       counter.increment();
-        doNotify(counter);
     }
 
     private void jButtondecrement_actionPerformed(ActionEvent e) {
     	counter.decrement();
-        doNotify(counter);
     }
 
     private void jButtonundo_actionPerformed(ActionEvent e) {
@@ -107,20 +111,5 @@ public class JFrameCounter extends JFrame implements ISubject {
     	System.out.println("redo");
     }
 
-    @Override
-    public void removeObserver(IFrameObserver observer) {
-        observerList.remove(observer);
-    }
 
-    @Override
-    public void addObserver(IFrameObserver observer) {
-        observerList.add(observer);
-    }
-
-    @Override
-    public void doNotify(Counter counter) {
-    for(IFrameObserver IFrameObserver :observerList){
-        IFrameObserver.update(counter);
-    }
-    }
 }

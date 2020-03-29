@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df994cbf-e112-4894-9637-7f7bfa7b537a" name="Default Changelist" comment="" />
+    <list default="true" id="df994cbf-e112-4894-9637-7f7bfa7b537a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/counter/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/counter/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/counter/ISubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/counter/ISubject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/counter/JFrameCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/counter/JFrameCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/counter/Counter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/counter/Counter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/counter/ISubject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/counter/ISubject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/counter/JFrameCounter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/counter/JFrameCounter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/counter/JFrameCounter$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/counter/JFrameCounter$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/counter/JFrameCounter$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/counter/JFrameCounter$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/counter/JFrameCounter$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/counter/JFrameCounter$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/counter/JFrameCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/counter/JFrameCounter.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +27,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1ZgvlIUVBRz0JKB8g2CcNKcJk8Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -56,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585273701176</updated>
       <workItem from="1585273704521" duration="2413000" />
+      <workItem from="1585517281480" duration="263000" />
     </task>
     <servers />
   </component>
@@ -71,5 +90,21 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="272" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1585274636689" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1585517539880">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585517539880" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1585517539877">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585517539877" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1585517539875">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585517539875" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1585517539878">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585517539878" />
   </component>
 </project>
