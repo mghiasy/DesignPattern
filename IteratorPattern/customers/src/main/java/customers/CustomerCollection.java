@@ -23,5 +23,10 @@ public class CustomerCollection {
 	public Iterator<Customer> addressFilterIterator(Predicate<Customer> predicate){
 		return  new AddressFilterIterator(customers, predicate);
 	}
+	//factory method to instantiate a new AgeIterator
+	//return type ==Iterator<T> because is overridden
+	public Iterator<Customer> ageIteratorFactory(){
+		return  new AgeIterator(customers);
+	}
 
 }

@@ -20,27 +20,31 @@ public class Application {
 		customerCollection.add(new Customer("Eric","Johnson","ejohnson@hotmail.com","0612342345",36, new Address("1000 S 4th street","San Fransisco","12544")));
 
 		//Part A
-		System.out.println("order customers  by age");
-		//customerCollection
-		//Part B
-		System.out.println("Show customers iterated by address");
-		Predicate<Customer> customerPredicate = p->p.getAddress().getCity().equals("Chicago") && p.getAddress().getZip().startsWith("12");
-		Iterator<Customer> customerAddressIterator= customerCollection.addressFilterIterator(customerPredicate);
-		while (customerAddressIterator.hasNext()){
-			customerAddressIterator.next();
+		System.out.println("Part A ------------order customers  by age------------");
+		Iterator<Customer> ageIterator = customerCollection.ageIteratorFactory();
+		while (ageIterator.hasNext()){
+			System.out.println(ageIterator.next());
 		}
-		customerCollection.print();
-
-		//Part C
-		System.out.println("Show skiped 1 customers");
-		Iterator<Customer> customerIterator= customerCollection.skip1Iterator();
-		while (customerIterator.hasNext()){
-			System.out.println(customerIterator.next());
-		}
-
-		//Part D
-		//Suppose you have to write an XML parser. Draw the class diagram of the domain model for
-		//this XML parser without using the composite pattern.
+//		//customerCollection
+//		//Part B
+//		System.out.println("Show customers iterated by address");
+//		Predicate<Customer> customerPredicate = p->p.getAddress().getCity().equals("Chicago") && p.getAddress().getZip().startsWith("12");
+//		Iterator<Customer> customerAddressIterator= customerCollection.addressFilterIterator(customerPredicate);
+//		while (customerAddressIterator.hasNext()){
+//			customerAddressIterator.next();
+//		}
+//		customerCollection.print();
+//
+//		//Part C
+//		System.out.println("Show skiped 1 customers");
+//		Iterator<Customer> customerIterator= customerCollection.skip1Iterator();
+//		while (customerIterator.hasNext()){
+//			System.out.println(customerIterator.next());
+//		}
+//
+//		//Part D
+//		//Suppose you have to write an XML parser. Draw the class diagram of the domain model for
+//		//this XML parser without using the composite pattern.
 
 	}
 
