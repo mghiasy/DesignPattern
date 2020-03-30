@@ -25,14 +25,20 @@ public class Application {
 		while (ageIterator.hasNext()){
 			System.out.println(ageIterator.next());
 		}
-//		//customerCollection
-//		//Part B
-//		System.out.println("Show customers iterated by address");
-//		Predicate<Customer> customerPredicate = p->p.getAddress().getCity().equals("Chicago") && p.getAddress().getZip().startsWith("12");
-//		Iterator<Customer> customerAddressIterator= customerCollection.addressFilterIterator(customerPredicate);
-//		while (customerAddressIterator.hasNext()){
-//			customerAddressIterator.next();
-//		}
+		//customerCollection
+		//Part B
+		System.out.println("Part A ------------Show customers in Chicago------------");
+		Predicate<Customer> chicagoPredicate = p->p.getAddress().getCity().equals("Chicago");
+		Iterator<Customer> customerAddressIterator= customerCollection.addressFilterIterator(chicagoPredicate);
+		while (customerAddressIterator.hasNext()){
+			System.out.println(customerAddressIterator.next());
+		}
+		System.out.println("Part A ------------Show customers which Zipcode startsWith 12 -------------");
+		Predicate<Customer> zipPredicate = p->p.getAddress().getZip().startsWith("12");
+		Iterator<Customer> customerZipIterator= customerCollection.addressFilterIterator(zipPredicate);
+		while (customerZipIterator.hasNext()){
+			System.out.println(customerZipIterator.next());
+		}
 //		customerCollection.print();
 //
 //		//Part C

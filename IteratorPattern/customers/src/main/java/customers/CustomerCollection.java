@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class CustomerCollection {
+public class CustomerCollection{
 	List<Customer> customers = new ArrayList<Customer>();
 	
 	public void add(Customer customer) {
@@ -28,5 +28,4 @@ public class CustomerCollection {
 	public Iterator<Customer> ageIteratorFactory(){
 		return  new AgeIterator(customers);
 	}
-
 }

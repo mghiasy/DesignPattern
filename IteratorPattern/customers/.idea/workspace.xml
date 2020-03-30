@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea973f52-1260-49cc-9aa2-df91a81f866d" name="Default Changelist" comment="" />
+    <list default="true" id="ea973f52-1260-49cc-9aa2-df91a81f866d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customers/CustomerCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/CustomerCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customers/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customers/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customers/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ObserverPattern/Bank/bank/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ObserverPattern/Bank/bank/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +22,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1ZjaxpAIQqeHyppUySBdGPJmUms" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,8 +34,29 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="customers.Application" />
+      <module name="customers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="customers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -36,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585355205935</updated>
       <workItem from="1585355207418" duration="2990000" />
+      <workItem from="1585529898034" duration="6156000" />
     </task>
     <servers />
   </component>
@@ -43,13 +77,84 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1585356943193">
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1585537048791">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1585356943193" />
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1585537048791" />
+    <state width="457" height="466" key="DebuggerActiveHint" timestamp="1585538601791">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="457" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1585538601791" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom" timestamp="1585539729688">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585539729688" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center" timestamp="1585539729685">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585539729685" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left" timestamp="1585539729684">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585539729684" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right" timestamp="1585539729687">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585539729687" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1585539409444">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585539409444" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1585539409443">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1585539409443" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1585539409441">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1585539409441" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1585539409443">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1585539409443" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585535262230">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1585535262230" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1585357534991">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1585357534991" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/customers/Application.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
