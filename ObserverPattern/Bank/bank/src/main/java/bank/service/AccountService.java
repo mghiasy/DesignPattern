@@ -30,7 +30,7 @@ public class AccountService implements IAccountService,ISubject {
 		Account account = accountDAO.loadAccount(accountNumber);
 		account.deposit(amount);
 		accountDAO.updateAccount(account);
-		doNotify(account);
+		//doNotify(account);
 	}
 
 	public Account getAccount(long accountNumber) {
@@ -46,7 +46,7 @@ public class AccountService implements IAccountService,ISubject {
 		Account account = accountDAO.loadAccount(accountNumber);
 		account.withdraw(amount);
 		accountDAO.updateAccount(account);
-		doNotify(account);
+		//doNotify(account);
 	}
 
 
