@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ea973f52-1260-49cc-9aa2-df91a81f866d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/customers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/customers/CustomerCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/CustomerCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customers/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customers/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customers/SkipOneIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/SkipOneIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/customers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customers/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ObserverPattern/Bank/bank/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ObserverPattern/Bank/bank/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/customers/SkipOneIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customers/SkipOneIterator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585355205935</updated>
       <workItem from="1585355207418" duration="2990000" />
-      <workItem from="1585529898034" duration="6156000" />
+      <workItem from="1585529898034" duration="7204000" />
     </task>
     <servers />
   </component>
@@ -85,38 +83,38 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="457" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1585538601791" />
-    <state width="1398" height="303" key="GridCell.Tab.0.bottom" timestamp="1585539729688">
+    <state width="1398" height="643" key="GridCell.Tab.0.bottom" timestamp="1585541696090">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585539729688" />
-    <state width="1398" height="303" key="GridCell.Tab.0.center" timestamp="1585539729685">
+    <state width="1398" height="643" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585541696090" />
+    <state width="1398" height="643" key="GridCell.Tab.0.center" timestamp="1585541696087">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585539729685" />
-    <state width="1398" height="303" key="GridCell.Tab.0.left" timestamp="1585539729684">
+    <state width="1398" height="643" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585541696087" />
+    <state width="1398" height="643" key="GridCell.Tab.0.left" timestamp="1585541696085">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585539729684" />
-    <state width="1398" height="303" key="GridCell.Tab.0.right" timestamp="1585539729687">
+    <state width="1398" height="643" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585541696085" />
+    <state width="1398" height="643" key="GridCell.Tab.0.right" timestamp="1585541696088">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585539729687" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1585539409444">
+    <state width="1398" height="643" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585541696088" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1585541552998">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585539409444" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1585539409443">
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585541552998" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1585541552997">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1585539409443" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1585539409441">
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1585541552997" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1585541552997">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1585539409441" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1585539409443">
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1585541552997" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1585541552998">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1585539409443" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1585541552998" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585535262230">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -130,29 +128,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/customers/SkipOneIterator.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/customers/SkipOneIterator.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/customers/Application.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="11" />
+          <line>46</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/customers/SkipOneIterator.java</url>
           <line>24</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/customers/AddressFilterIterator.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

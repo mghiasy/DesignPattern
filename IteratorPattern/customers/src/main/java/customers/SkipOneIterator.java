@@ -14,11 +14,19 @@ public class SkipOneIterator<T> implements Iterator {
 
     @Override
     public boolean hasNext() {
-        return position++ >=0;
+        int tempPosition = position;
+        while (tempPosition + 1 <= list.size())
+            return true;
+    return false;
     }
 
     @Override
     public Object next() {
-        return list.get(position +2);
+       int tempPosition = position;
+        while (tempPosition + 1 <= list.size()) {
+            position = tempPosition + 2;
+            return list.get(tempPosition);
+        }
+        return null;
     }
 }

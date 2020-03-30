@@ -27,13 +27,13 @@ public class Application {
 		}
 		//customerCollection
 		//Part B
-		System.out.println("Part A ------------Show customers in Chicago------------");
+		System.out.println("Part B1 ------------Show customers in Chicago------------");
 		Predicate<Customer> chicagoPredicate = p->p.getAddress().getCity().equals("Chicago");
 		Iterator<Customer> customerAddressIterator= customerCollection.addressFilterIterator(chicagoPredicate);
 		while (customerAddressIterator.hasNext()){
 			System.out.println(customerAddressIterator.next());
 		}
-		System.out.println("Part A ------------Show customers which Zipcode startsWith 12 -------------");
+		System.out.println("Part B2 ------------Show customers which Zipcode startsWith 12 -------------");
 		Predicate<Customer> zipPredicate = p->p.getAddress().getZip().startsWith("12");
 		Iterator<Customer> customerZipIterator= customerCollection.addressFilterIterator(zipPredicate);
 		while (customerZipIterator.hasNext()){
@@ -41,12 +41,12 @@ public class Application {
 		}
 //		customerCollection.print();
 //
-//		//Part C
-//		System.out.println("Show skiped 1 customers");
-//		Iterator<Customer> customerIterator= customerCollection.skip1Iterator();
-//		while (customerIterator.hasNext()){
-//			System.out.println(customerIterator.next());
-//		}
+		//Part C
+		System.out.println("Part C ------------Show skiped 1 customers----------------");
+		Iterator<Customer> customerIterator= customerCollection.skip1Iterator();
+		while (customerIterator.hasNext()){
+			System.out.println(customerIterator.next());
+		}
 //
 //		//Part D
 //		//Suppose you have to write an XML parser. Draw the class diagram of the domain model for
