@@ -17,7 +17,7 @@ public class JFrameCounter extends JFrame{
     private JButton jButtondecrement = new JButton();
     private JButton jButtonundo = new JButton();
     private JButton jButtonredo = new JButton();
-    
+    private HistoryCommand historyCommand= new HistoryCommand();
     private Counter counter;
 
     //in constructor we create counter and frames
@@ -41,7 +41,7 @@ public class JFrameCounter extends JFrame{
     }
 
     public static void main(String[] args) {
-    	JFrameCounter frame = new JFrameCounter();
+        JFrameCounter frame = new JFrameCounter();
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Dimension frameSize = frame.getSize();
         if (frameSize.height > screenSize.height) {
@@ -53,7 +53,7 @@ public class JFrameCounter extends JFrame{
         frame.setLocation( ( screenSize.width - frameSize.width ) / 2, ( screenSize.height - frameSize.height ) / 2 );
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
         frame.setVisible(true);
-        
+
     }
 
     private void jbInit() throws Exception {
@@ -96,19 +96,27 @@ public class JFrameCounter extends JFrame{
     }
 
     private void jButtonIncrement_actionPerformed(ActionEvent e) {
-      counter.increment();
+        CounterCommands incrementCommand = new IncrementCommand(counter);
+        incrementCommand.execute();
+        historyCommand.addCommand(incrementCommand);
+      //counter.increment();
     }
 
     private void jButtondecrement_actionPerformed(ActionEvent e) {
-    	counter.decrement();
+        CounterCommands decrementCommand = new DecrementCommand(counter);
+        decrementCommand.execute();
+        historyCommand.addCommand(decrementCommand);
+    	//counter.decrement();
     }
 
     private void jButtonundo_actionPerformed(ActionEvent e) {
     	System.out.println("undo");
+    	historyCommand.undo();
     }
 
     private void jButtonredo_actionPerformed(ActionEvent e) {
     	System.out.println("redo");
+    	historyCommand.redo();
     }
 
 

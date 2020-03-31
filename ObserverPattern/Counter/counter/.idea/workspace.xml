@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df994cbf-e112-4894-9637-7f7bfa7b537a" name="Default Changelist" comment="" />
+    <list default="true" id="df994cbf-e112-4894-9637-7f7bfa7b537a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/counter/DecrementCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/counter/HistoryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CommandPattern/bank/src/main/java/bank/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CommandPattern/bank/src/main/java/bank/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CommandPattern/bank/src/main/java/bank/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CommandPattern/bank/src/main/java/bank/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CommandPattern/bank/target/classes/bank/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CommandPattern/bank/target/classes/bank/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CommandPattern/bank/target/classes/bank/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CommandPattern/bank/target/classes/bank/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/counter/JFrameCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/counter/JFrameCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/counter/JFrameCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/counter/JFrameCounter.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1ZgvlIUVBRz0JKB8g2CcNKcJk8Q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,8 +41,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="counter" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.JFrameCounter">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="counter.Application" />
+      <module name="counter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="counter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JFrameCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="counter.JFrameCounter" />
       <module name="counter" />
@@ -47,6 +78,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JFrameCounter" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -62,6 +94,7 @@
       <updated>1585273701176</updated>
       <workItem from="1585273704521" duration="2413000" />
       <workItem from="1585517281480" duration="639000" />
+      <workItem from="1585615478822" duration="1872000" />
     </task>
     <servers />
   </component>
@@ -69,29 +102,65 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1585274904643">
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1585618828794">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1585274904643" />
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1585618828794" />
     <state x="272" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585274636689">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="272" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1585274636689" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1585519060696">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1585619920602">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585519060696" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1585519060695">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585619920602" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1585619920600">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585519060695" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1585519060695">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585619920600" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1585619920600">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585519060695" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1585519060696">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585619920600" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1585619920601">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585519060696" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585619920601" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1585619701951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585619701951" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.23.1440.820@0.23.1440.820" timestamp="1585619660149" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1585619701950">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1585619701950" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.23.1440.820@0.23.1440.820" timestamp="1585619660148" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1585619701949">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1585619701949" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.23.1440.820@0.23.1440.820" timestamp="1585619660147" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1585619701951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1585619701951" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.23.1440.820@0.23.1440.820" timestamp="1585619660148" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/counter/JFrameCounter.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/counter/Counter.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
