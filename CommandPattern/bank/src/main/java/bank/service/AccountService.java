@@ -4,13 +4,12 @@ import java.util.Collection;
 
 import bank.dao.AccountDAO;
 import bank.dao.IAccountDAO;
-import bank.domain.Account;
-import bank.domain.Customer;
+import bank.domain.*;
 
 
 public class AccountService implements IAccountService {
 	private IAccountDAO accountDAO;
-
+	private HistoryCommand historyCommand;
 	
 	public AccountService(){
 		accountDAO=new AccountDAO();
@@ -53,5 +52,14 @@ public class AccountService implements IAccountService {
 		fromAccount.transferFunds(toAccount, amount, description);
 		accountDAO.updateAccount(fromAccount);
 		accountDAO.updateAccount(toAccount);
+	}
+
+
+	//Work with commands
+	public void createTransferFundsCommand(Account account, Account toAccount, double amount, String description){
+		new TransferFundsCommand(account,toAccount,amount,description);
+	}
+	public void createDepositCommand(Account account, double amount){
+		new DepositCommand(account, amount);
 	}
 }
