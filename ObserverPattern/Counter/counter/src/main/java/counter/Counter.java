@@ -1,7 +1,8 @@
 package counter;
 
 public class Counter  implements ISubject{
-	
+
+	private CounterState counterState;
 	private int count=0;
 	//donotify
 	public void increment(){

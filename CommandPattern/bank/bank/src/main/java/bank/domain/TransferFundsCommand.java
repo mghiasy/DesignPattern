@@ -1,17 +1,17 @@
 package bank.domain;
 
 public class TransferFundsCommand implements IBankCommands{
-    private Account account;
+    private Account fromAccount;
     private Account toAccount;
-    double amount;
-    String description;
+    private double amount;
+    private String description;
     @Override
     public void execute() {
-        account.transferFunds(toAccount, amount, description);
+        fromAccount.transferFunds(toAccount, amount, description);
     }
 
     public TransferFundsCommand(Account account, Account toAccount, double amount, String description) {
-        this.account = account;
+        this.fromAccount = account;
         this.toAccount = toAccount;
         this.amount = amount;
         this.description = description;
@@ -19,6 +19,6 @@ public class TransferFundsCommand implements IBankCommands{
 
     @Override
     public void unexecute() {
-        account.transferFunds(account, amount, description);
+        fromAccount.transferFunds(fromAccount, amount, description);
     }
 }

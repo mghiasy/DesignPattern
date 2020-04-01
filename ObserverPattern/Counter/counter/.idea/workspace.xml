@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df994cbf-e112-4894-9637-7f7bfa7b537a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/counter/CounterState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/counter/DoubleDigit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/counter/SingleDigit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/counter/TripleDigit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/counter/CounterState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/counter/DoubleDigit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/counter/SingleDigit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/counter/TripleDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/counter/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/counter/Counter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +94,7 @@
       <workItem from="1585615478822" duration="1872000" />
       <workItem from="1585718240423" duration="169000" />
       <workItem from="1585718676590" duration="40000" />
+      <workItem from="1585718820714" duration="1025000" />
     </task>
     <servers />
   </component>
@@ -155,7 +157,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/counter/Counter.java</url>
-          <line>7</line>
+          <line>8</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
