@@ -4,7 +4,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		Game game = new Game();
-		LevelState level1= new Level1(game);
+		LevelState level1= new Level1();
 		game.setLevelState(level1);
 		game.play();
 		game.play();

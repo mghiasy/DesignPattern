@@ -1,9 +1,6 @@
 package game;
 
-public class Level3 extends LevelState{
-    public Level3(Game game)  {
-        super(game);
-    }
+public class Level3 implements LevelState{
 
     @Override
     public String getLevel() {
@@ -11,8 +8,8 @@ public class Level3 extends LevelState{
     }
 
     @Override
-    public int addpoint(int newPoints) {
-        totalPoints = totalPoints + 3*newPoints;
+    public int computePoints(Game game,int newPoints) {
+        int totalPoints = game.getTotalPoints() + 3*newPoints;
         return totalPoints;
     }
 

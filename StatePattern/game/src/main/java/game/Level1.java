@@ -1,9 +1,6 @@
 package game;
 
-public class Level1 extends LevelState{
-    public Level1(Game game) {
-        super(game);
-    }
+public class Level1 implements LevelState{
 
     @Override
     public String getLevel() {
@@ -11,12 +8,13 @@ public class Level1 extends LevelState{
     }
 
     @Override
-    public int addpoint(int newPoints) {
-        totalPoints = game.getTotalPoints() + newPoints;
+    public int computePoints(Game game,int newPoints) {
+       int totalPoints = game.getTotalPoints() + newPoints;
         if (totalPoints > 10) { // move to level 2
-            LevelState level2 = new Level2(game);
-            game.setLevelState(level2);
-            game.setTotalPoints(totalPoints + 1);//add 1 bonus point
+          //  LevelState level2 = new Level2();
+            game.setLevelState(new Level2());
+            //game.setTotalPoints(totalPoints + 1);//add 1 bonus point
+            totalPoints=totalPoints + 1;
         }
         return  totalPoints;
     }

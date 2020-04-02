@@ -2,6 +2,7 @@ package game;
 
 import java.util.Random;
 
+//this class is independent from level so if we add another level no need to be changed
 public class Game {
 	private int totalPoints = 0;
 	//private int level = 1;
@@ -10,12 +11,9 @@ public class Game {
 
 	public void play() {
 		Random random = new Random();
-		addPoints(random.nextInt(7));
-		System.out.println("points="+totalPoints+" level="+levelState.getLevel());
-	}
-
-	public void setTotalPoints(int totalPoints) {
-		this.totalPoints = totalPoints;
+		int currentPoints=random.nextInt(7);
+		addPoints(currentPoints);
+		System.out.println("CurrentPoint = "+currentPoints+ "totalPoints="+totalPoints+" level="+levelState.getLevel());
 	}
 
 	public void setLevelState(LevelState levelState) {
@@ -45,8 +43,12 @@ public class Game {
 //		}
 //
 //		return totalPoints;
-		totalPoints=levelState.addpoint(newPoints);
+
+
+		//for bonus
+		//No need to call setTotalPoint from states
+		//totalPoints=totalPoints+levelState.computePoints(this,newPoints);
+		totalPoints=levelState.computePoints(this,newPoints);
 		return totalPoints;
 	}
-
 }

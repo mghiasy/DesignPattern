@@ -1,12 +1,12 @@
 package game;
 
-public abstract class LevelState {
-    protected LevelState(Game game) {
-        this.game = game;
-    }
+//for push methos it is better to use interface
+public interface LevelState {
 
-    public abstract  String getLevel();
-    public abstract  int addpoint(int newPoints);
-    protected int totalPoints;
-    protected final Game game;
+    //for push strustur we push the whole context class
+    String getLevel();
+    int computePoints(Game game, int newPoints);
+    //  protected int totalPoints;
+    //No need to it we want to use push method
+    //protected final Game game;
 }
