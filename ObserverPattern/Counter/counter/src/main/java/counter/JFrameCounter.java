@@ -26,6 +26,10 @@ public class JFrameCounter extends JFrame{
         try {
             jbInit();
             counter = new Counter();
+            //Codes for StatePattern
+            CounterState singleDigit = new SingleDigit(counter);
+            counter.setCounterState(singleDigit);
+
             TextFrame textframe = new TextFrame();
             textframe.setVisible(true);
             RectFrame rectframe = new RectFrame();

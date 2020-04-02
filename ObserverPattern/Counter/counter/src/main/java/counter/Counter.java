@@ -2,11 +2,13 @@ package counter;
 
 public class Counter  implements ISubject{
 
-	private CounterState counterState;
+	//relation with counterState
+	CounterState counterState;
 	private int count=0;
 	//donotify
 	public void increment(){
-		count++;
+		//count++;
+		count = count+counterState.computeDigit();
 		doNotify(this);
 	}
 
@@ -14,18 +16,26 @@ public class Counter  implements ISubject{
 		return count;
 	}
 
-	public void setCount(int count) {
-		this.count = count;
-	}
+	//Because we dont set count here any more
+	//we send it to states
+//	public void setCount(int count) {
+//		this.count = count;
+//	}
 
 	//donotify
 	public void decrement(){
-		count--;
+		//count--;
+		count = count-counterState.computeDigit();
 		doNotify(this);
 	}
 	@Override
 	public void removeObserver(IFrameObserver observer) {
 		observerList.remove(observer);
+	}
+
+	//SetterMethod for counterState
+	public void setCounterState(CounterState counterState) {
+		this.counterState = counterState;
 	}
 
 	@Override
@@ -39,5 +49,7 @@ public class Counter  implements ISubject{
 			IFrameObserver.update(counter);
 		}
 	}
+
+
 
 }
