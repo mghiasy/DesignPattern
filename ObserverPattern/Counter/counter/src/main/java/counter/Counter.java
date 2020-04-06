@@ -4,12 +4,21 @@ public class Counter  implements ISubject{
 
 	//relation with counterState
 	CounterState counterState;
+
+	public void setCountHandler(CountHandler countHandler) {
+		this.countHandler = countHandler;
+	}
+
+	//for COR
+	private CountHandler countHandler;
 	private int count=0;
 	//donotify
 	public void increment(){
 		//count++;
 		count = count+counterState.computeDigit();
 		doNotify(this);
+		//COR
+		countHandler.handle(count);
 	}
 
 	public int getCount() {
@@ -27,6 +36,7 @@ public class Counter  implements ISubject{
 		//count--;
 		count = count-counterState.computeDigit();
 		doNotify(this);
+		countHandler.handle(count);
 	}
 	@Override
 	public void removeObserver(IFrameObserver observer) {

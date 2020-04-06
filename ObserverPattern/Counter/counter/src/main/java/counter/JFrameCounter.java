@@ -39,6 +39,14 @@ public class JFrameCounter extends JFrame{
             counter.addObserver(textframe);
             counter.addObserver(rectframe);
             counter.addObserver(ovalframe);
+
+
+            CountHandler orangeHandler= new OrangeHandler(null);
+            CountHandler blueHandler= new BlueHandler(orangeHandler);
+            CountHandler greenHandler= new GreenHandler(blueHandler);
+            CountHandler redHandler= new RedHandler(greenHandler);
+
+            counter.setCountHandler(redHandler);
         } catch (Exception e) {
             e.printStackTrace();
         }
