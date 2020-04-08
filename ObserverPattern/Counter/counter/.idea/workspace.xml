@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df994cbf-e112-4894-9637-7f7bfa7b537a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/counter/BlueHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/counter/CountHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/counter/GreenHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/counter/OrangeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/counter/RedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/counter/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/counter/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/counter/JFrameCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/counter/JFrameCounter.java" afterDir="false" />
-    </list>
+    <list default="true" id="df994cbf-e112-4894-9637-7f7bfa7b537a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,6 +90,7 @@
       <workItem from="1585718820714" duration="1025000" />
       <workItem from="1585803879577" duration="3267000" />
       <workItem from="1585867580848" duration="1731000" />
+      <workItem from="1586216488234" duration="4000" />
     </task>
     <servers />
   </component>
