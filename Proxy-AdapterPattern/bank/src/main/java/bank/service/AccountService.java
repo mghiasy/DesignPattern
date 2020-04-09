@@ -1,7 +1,9 @@
 package bank.service;
 
 import java.lang.reflect.Proxy;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 
 import bank.dao.AccountDAO;
 import bank.dao.IAccountDAO;
@@ -10,6 +12,7 @@ import bank.domain.Customer;
 import bank.proxies.LoggingProxy;
 import bank.proxies.TimingProxy;
 import bank.service.adapter.AccountAdapter;
+import bank.service.dto.AccountDTO;
 
 
 public class AccountService implements IAccountService {
@@ -48,19 +51,31 @@ public class AccountService implements IAccountService {
 		accountDAO.updateAccount(account);
 	}
 
-	public Account getAccount(long accountNumber) {
+//	public Account getAccount(long accountNumber) {
+//		Account account = accountDAO.loadAccount(accountNumber);
+//		return account;
+//	}
+
+//use Adapter ->return getAccountDTO
+	public AccountDTO getAccount(long accountNumber) {
 		Account account = accountDAO.loadAccount(accountNumber);
-		return account;
+		AccountDTO accountDTO =AccountAdapter.getAccountDTO(account) ;
+		return accountDTO;
 	}
-//use Adapter
-//public AccountDTO getAccount(long accountNumber) {
-//	//Account account = accountDAO.loadAccount(accountNumber);
-//	//AccountDTO accountDTO =accountAdapter.getAccountDTObById(accountNumber) ;
-//	return accountDTO;
-//}
-	public Collection<Account> getAllAccounts() {
+//	public Collection<Account> getAllAccounts() {
+//		//So any where we have accountDAO is using loggingProxy
+//		return accountDAO.getAccounts();
+//	}
+	public Collection<AccountDTO> getAllAccounts() {
 		//So any where we have accountDAO is using loggingProxy
-		return accountDAO.getAccounts();
+		//return accountDAO.getAccounts();
+		Collection<Account> accounts= accountDAO.getAccounts();
+		Collection<AccountDTO> accountDTOS=new ArrayList<AccountDTO>();
+		for(Account account:accounts){
+			//translate every account to accountDTO and add to the list
+			accountDTOS.add(AccountAdapter.getAccountDTO(account));
+		}
+		return accountDTOS;
 	}
 
 	public void withdraw(long accountNumber, double amount) {

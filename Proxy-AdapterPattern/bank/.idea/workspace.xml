@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b7d341d-8de3-44be-b0d3-0aca19e67d50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bank/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bank/domain/LoggingProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/proxies/LoggingProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bank/domain/TimingProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/proxies/TimingProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/AccountAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/adapter/AccountAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/dto/AccountDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bank/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bank/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bank/domain/LoggingProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bank/domain/TimingProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bank/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bank/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/IAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/IAccountService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +84,7 @@
       <workItem from="1586389525905" duration="842000" />
       <workItem from="1586392836206" duration="1322000" />
       <workItem from="1586394649612" duration="863000" />
-      <workItem from="1586396727071" duration="358000" />
+      <workItem from="1586396727071" duration="1224000" />
     </task>
     <servers />
   </component>
