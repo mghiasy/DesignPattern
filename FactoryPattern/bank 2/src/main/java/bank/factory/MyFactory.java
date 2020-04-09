@@ -1,6 +1,7 @@
-package bank.dao;
+package bank.factory;
 
-import bank.Mock.MockEmailSender;
+import bank.dao.IAccountDAO;
+import bank.email.IEmailSender;
 
 public interface MyFactory {
     IAccountDAO getAccountDAO();

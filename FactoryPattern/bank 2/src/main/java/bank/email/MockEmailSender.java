@@ -1,6 +1,5 @@
-package bank.Mock;
+package bank.email;
 
-import bank.dao.IEmailSender;
 import bank.domain.Customer;
 
 public class MockEmailSender implements IEmailSender {

@@ -1,15 +1,10 @@
 package bank;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Collection;
-import java.util.Properties;
 
-import bank.dao.DAOFactory;
-import bank.dao.IAccountDAO;
-import bank.dao.IEmailSender;
-import bank.dao.MyFactory;
+import bank.factory.BankFactory;
+import bank.factory.MyFactory;
 import bank.domain.Account;
 import bank.domain.AccountEntry;
 import bank.domain.Customer;
@@ -25,8 +20,8 @@ public class Application {
 
 		//Create Item by Mock or Dao factory
 
-		DAOFactory daoFactory = new DAOFactory();
-		MyFactory factory=daoFactory.getFactorInstance();
+		BankFactory bankFactory = new BankFactory();
+		MyFactory factory= bankFactory.getFactorInstance();
 		IAccountService accountService= new AccountService(factory.getAccountDAO());
 
 		// create 2 accounts;

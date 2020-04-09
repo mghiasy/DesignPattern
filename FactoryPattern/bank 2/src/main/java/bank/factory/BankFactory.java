@@ -1,16 +1,19 @@
-package bank.dao;
+package bank.factory;
+
+import bank.factory.MockFactory;
+import bank.factory.MyFactory;
+import bank.factory.ProductionFactory;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class DAOFactory {
+public class BankFactory {
     //relation with factory -- injecttion
     private MyFactory myFactory ;
 
     //The value of factory in run time and in constructor will be set
-    public DAOFactory() throws IOException {
+    public BankFactory() throws IOException {
        // String rootPath= Thread.currentThread().getContextClassLoader().getResources("config.properties").getPath();
        // System.out.println("path = "+ rootPath);
         //Load the property file

@@ -1,9 +1,11 @@
-package bank.dao;
+package bank.factory;
 
-import bank.Mock.MockAccountDAO;
-import bank.Mock.MockEmailSender;
+import bank.dao.IAccountDAO;
+import bank.dao.MockAccountDAO;
+import bank.email.IEmailSender;
+import bank.email.MockEmailSender;
 
-public class MockFactory implements MyFactory{
+public class MockFactory implements MyFactory {
     @Override
     public IAccountDAO getAccountDAO() {
         return new MockAccountDAO();

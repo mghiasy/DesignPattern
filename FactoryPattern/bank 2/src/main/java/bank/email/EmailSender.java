@@ -1,8 +1,9 @@
-package bank.dao;
+package bank.email;
 
 import bank.domain.Customer;
+import bank.email.IEmailSender;
 
-public class EmailSender implements IEmailSender{
+public class EmailSender implements IEmailSender {
     @Override
     public void sendEamil(Customer customer) {
         System.out.println("Send Eamil to cusrtomer from EamilSender to customer: "+ customer.getName());

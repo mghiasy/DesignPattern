@@ -1,4 +1,4 @@
-package bank.Mock;
+package bank.dao;
 
 import bank.dao.IAccountDAO;
 import bank.domain.Account;
