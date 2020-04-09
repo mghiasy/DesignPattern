@@ -6,17 +6,26 @@ import bank.dao.AccountDAO;
 import bank.dao.IAccountDAO;
 import bank.domain.Account;
 import bank.domain.Customer;
+import bank.email.IEmailSender;
+import bank.factory.BankFactory;
+import bank.factory.MyFactory;
 
 
 public class AccountService implements IAccountService {
 	private IAccountDAO accountDAO;
-
-	public AccountService(IAccountDAO accountDAO) {
-		this.accountDAO = accountDAO;
-	}
+	//New relation to EmailSender
+	private IEmailSender emailSender;
 
 	public AccountService(){
-		accountDAO=new AccountDAO();
+		BankFactory bankFactory= new BankFactory();
+		//get the factory type--> returns either mockFactory or productionFactory
+		MyFactory myFactory= bankFactory.getFactorInstance();
+
+		//return AccountDAO or MockAccountDAO
+		//accountDAO=new AccountDAO();
+		accountDAO=myFactory.getAccountDAO();
+		//return EmailSender or MockEmailSender
+		emailSender=myFactory.getEmailSender();
 	}
 
 	public Account createAccount(long accountNumber, String customerName) {
@@ -31,6 +40,7 @@ public class AccountService implements IAccountService {
 		Account account = accountDAO.loadAccount(accountNumber);
 		account.deposit(amount);
 		accountDAO.updateAccount(account);
+		emailSender.sendEamil("Account with accountnumber "+accountNumber+" has been changed");
 	}
 
 	public Account getAccount(long accountNumber) {
@@ -46,6 +56,7 @@ public class AccountService implements IAccountService {
 		Account account = accountDAO.loadAccount(accountNumber);
 		account.withdraw(amount);
 		accountDAO.updateAccount(account);
+		emailSender.sendEamil("Account with accountnumber "+accountNumber+" has been changed");
 	}
 
 
@@ -56,5 +67,7 @@ public class AccountService implements IAccountService {
 		fromAccount.transferFunds(toAccount, amount, description);
 		accountDAO.updateAccount(fromAccount);
 		accountDAO.updateAccount(toAccount);
+		emailSender.sendEamil("Account with accountnumber "+fromAccountNumber+" has been changed");
+		emailSender.sendEamil("Account with accountnumber "+toAccountNumber+" has been changed");
 	}
 }

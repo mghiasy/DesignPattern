@@ -18,11 +18,13 @@ public class Application {
 
 		//IAccountService accountService = new AccountService();
 
-		//Create Item by Mock or Dao factory
 
-		BankFactory bankFactory = new BankFactory();
-		MyFactory factory= bankFactory.getFactorInstance();
-		IAccountService accountService= new AccountService(factory.getAccountDAO());
+		//*******It is supposed to be checked in service Constructor not here**********
+		//******* No change here **********
+//		//Create Item by Mock or Dao factory
+//		BankFactory bankFactory = new BankFactory();
+//		MyFactory factory= bankFactory.getFactorInstance();
+		IAccountService accountService= new AccountService();
 
 		// create 2 accounts;
 		accountService.createAccount(1263862, "Frank Brown");

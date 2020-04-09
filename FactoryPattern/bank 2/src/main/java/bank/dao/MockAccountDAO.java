@@ -1,32 +1,37 @@
 package bank.dao;
 
-import bank.dao.IAccountDAO;
 import bank.domain.Account;
-
 import java.util.ArrayList;
 import java.util.Collection;
 
+//In this poackage we have both AccountDao and MockAccountDao -->They are exactly the same and copy
 public class MockAccountDAO implements IAccountDAO {
-    @Override
+    Collection<Account> accountlist = new ArrayList<Account>();
+
     public void saveAccount(Account account) {
-        System.out.println("Mock account saved");
+        accountlist.add(account); // add the new
     }
 
-    @Override
     public void updateAccount(Account account) {
-        System.out.println("Mock account updated");
+        Account accountexist = loadAccount(account.getAccountnumber());
+        if (accountexist != null) {
+            accountlist.remove(accountexist); // remove the old
+            accountlist.add(account); // add the new
+        }
+
     }
 
-    @Override
     public Account loadAccount(long accountnumber) {
-        System.out.println("Mock account loaded");
-        return new Account(112233);
+        for (Account account : accountlist) {
+            if (account.getAccountnumber() == accountnumber) {
+                return account;
+            }
+        }
+        return null;
     }
 
-    @Override
     public Collection<Account> getAccounts() {
-        System.out.println("Mock accounts loaded");
-        Collection<Account> accountlist = new ArrayList<Account>();
         return accountlist;
     }
 }
+
