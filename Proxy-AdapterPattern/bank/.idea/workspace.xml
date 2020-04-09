@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b7d341d-8de3-44be-b0d3-0aca19e67d50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/IAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/IAccountService.java" afterDir="false" />
-    </list>
+    <list default="true" id="1b7d341d-8de3-44be-b0d3-0aca19e67d50" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +80,7 @@
       <workItem from="1586389525905" duration="842000" />
       <workItem from="1586392836206" duration="1322000" />
       <workItem from="1586394649612" duration="863000" />
-      <workItem from="1586396727071" duration="1224000" />
+      <workItem from="1586396727071" duration="1422000" />
     </task>
     <servers />
   </component>
