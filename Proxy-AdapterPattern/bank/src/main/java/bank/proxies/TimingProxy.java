@@ -1,6 +1,7 @@
-package bank.domain;
+package bank.proxies;
+import bank.domain.StopWatch;
+
 import java.lang.reflect.*;
-import java.util.logging.Logger;
 
 public class TimingProxy implements InvocationHandler {
     private Object target;

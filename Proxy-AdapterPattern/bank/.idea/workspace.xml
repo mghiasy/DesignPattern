@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b7d341d-8de3-44be-b0d3-0aca19e67d50" name="Default Changelist" comment="" />
+    <list default="true" id="1b7d341d-8de3-44be-b0d3-0aca19e67d50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bank/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bank/domain/LoggingProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/proxies/LoggingProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bank/domain/TimingProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/proxies/TimingProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/AccountAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/adapter/AccountAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/dto/AccountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bank/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bank/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bank/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bank/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bank/domain/LoggingProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bank/domain/TimingProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bank/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bank/service/AccountService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +28,20 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1aBklM07bc8ja7xwLyFvOqBaVHJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,6 +49,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -60,6 +87,13 @@
       <workItem from="1586218320637" duration="1615000" />
       <workItem from="1586220139839" duration="1798000" />
       <workItem from="1586221962991" duration="457000" />
+      <workItem from="1586384260958" duration="1294000" />
+      <workItem from="1586385762217" duration="1538000" />
+      <workItem from="1586387573435" duration="924000" />
+      <workItem from="1586389525905" duration="842000" />
+      <workItem from="1586392836206" duration="1322000" />
+      <workItem from="1586394649612" duration="863000" />
+      <workItem from="1586396727071" duration="358000" />
     </task>
     <servers />
   </component>
@@ -67,26 +101,31 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1586221688835">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser" timestamp="1586393827740">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1586221688835" />
-    <state width="1398" height="303" key="GridCell.Tab.0.bottom" timestamp="1586219771991">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser/0.23.1440.820@0.23.1440.820" timestamp="1586393827740" />
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1586388764650">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586219771991" />
-    <state width="1398" height="303" key="GridCell.Tab.0.center" timestamp="1586219771989">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1586388764650" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1586388764648">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586219771989" />
-    <state width="1398" height="303" key="GridCell.Tab.0.left" timestamp="1586219771986">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1586388764648" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1586388764648">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586219771986" />
-    <state width="1398" height="303" key="GridCell.Tab.0.right" timestamp="1586219771990">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1586388764648" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1586388764649">
+      <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586219771990" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1586388764649" />
     <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1586219771993">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -108,14 +147,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/bank/Application.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/bank/service/AccountService.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/bank/domain/Account.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

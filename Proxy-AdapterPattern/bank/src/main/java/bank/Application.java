@@ -6,7 +6,7 @@ import java.util.Collection;
 import bank.domain.Account;
 import bank.domain.AccountEntry;
 import bank.domain.Customer;
-import bank.domain.TimingProxy;
+import bank.proxies.TimingProxy;
 import bank.service.AccountService;
 import bank.service.IAccountService;
 
@@ -14,38 +14,23 @@ import bank.service.IAccountService;
 
 public class Application {
 	public static void main(String[] args) {
-		IAccountService accountService = new AccountService();
-		ClassLoader classLoader = AccountService.class.getClassLoader();
-		IAccountService timingProxy =(IAccountService) Proxy.newProxyInstance(classLoader,new Class[] {IAccountService.class}, new TimingProxy(accountService));
+		IAccountService theAccountService = new AccountService();
+		ClassLoader cl = AccountService.class.getClassLoader();
+		//We create a new accountService and put Timing proxy in front of it
+		IAccountService accountService =(IAccountService) Proxy.newProxyInstance(cl,new Class[] {IAccountService.class}, new TimingProxy(theAccountService));
 		// create 2 accounts;
-		//accountService.createAccount(1263862, "Frank Brown");
-		//accountService.createAccount(4253892, "John Doe");
-
-
-		//use proxy
-		timingProxy.createAccount(1263862, "Frank Brown");
-		timingProxy.createAccount(4253892, "John Doe");
-
+		//with the same name so no need to change any thing-> every time we use accountService it calls the proxy before
+		accountService.createAccount(1263862, "Frank Brown");
+		accountService.createAccount(4253892, "John Doe");
 
 		//use account 1
-		//accountService.deposit(1263862, 240);
-		//accountService.deposit(1263862, 529);
-		//accountService.withdraw(1263862, 230);
-
-		//use proxy
-		timingProxy.deposit(1263862, 240);
-		timingProxy.deposit(1263862, 529);
-		timingProxy.deposit(1263862, 230);
-
+		accountService.deposit(1263862, 240);
+		accountService.deposit(1263862, 529);
+		accountService.withdraw(1263862, 230);
 
 		//use account 2;
-		//accountService.deposit(4253892, 12450);
-		//accountService.transferFunds(4253892, 1263862, 100, "payment of invoice 10232");
-
-		//use proxy
-		timingProxy.deposit(4253892, 12450);
-		timingProxy.transferFunds(4253892, 1263862, 100, "payment of invoice 10232");
-
+		accountService.deposit(4253892, 12450);
+		accountService.transferFunds(4253892, 1263862, 100, "payment of invoice 10232");
 
 		// show balances
 		
