@@ -26,6 +26,9 @@ public class AccountService implements IAccountService {
 		accountDAO=myFactory.getAccountDAO();
 		//return EmailSender or MockEmailSender
 		emailSender=myFactory.getEmailSender();
+
+		//To put logger in front of AccountDAO==> we should go to service because AccountDAO is created there
+		//since it will be created through Factory we should go to factories , in method getAccountDAO
 	}
 
 	public Account createAccount(long accountNumber, String customerName) {
