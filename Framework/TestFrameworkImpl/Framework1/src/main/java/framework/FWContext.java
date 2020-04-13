@@ -70,7 +70,7 @@ public class FWContext {
 					if(field.isAnnotationPresent(Inject.class)){
 						//get the type of the field ==> is the target class
 						Class<?> theFieldType = field.getType();
-						//get the obj of this type
+						//get the obj of this type --> get the concrete of the context type
 						Object instance =getBeanOfType(theFieldType);
 						//do the injection
 						field.setAccessible(true);
