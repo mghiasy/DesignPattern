@@ -13,11 +13,11 @@ public class CustomerService implements ICustomerService {
 		emailSender.sendEmail(email, "Welcome " + name + " as a new customer");
 	}
 
-    public void setCustomerDAO(CustomerDAO customerDAO) {
+    public void setCustomerDAO(ICustomerDAO customerDAO) {
 		this.customerDAO=customerDAO;
     }
 
-	public void setEmailSender(EmailSender emailSender) {
+	public void setEmailSender(IEmailSender emailSender) {
 		this.emailSender=emailSender;
 	}
 }

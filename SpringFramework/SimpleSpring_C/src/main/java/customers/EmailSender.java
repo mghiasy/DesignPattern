@@ -13,7 +13,5 @@ public class EmailSender implements IEmailSender {
 		logger.log("Email is sent: message= "+message +" , emailaddress ="+ email  );
 	}
 
-    public void setLogger(Logger logger) {
-		this.logger=logger;
-    }
+    public void setLogger(ILogger logger) { this.logger=logger; }
 }

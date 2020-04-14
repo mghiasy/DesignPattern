@@ -14,7 +14,5 @@ public class CustomerDAO implements ICustomerDAO{
 		logger.log("Customer is saved in the DB: "+ customer.getName() );
 	}
 
-	public void setLogger(ILogger logger) {
-		this.logger=logger;
-	}
+	public void setLogger(ILogger logger) { this.logger=logger; }
 }
