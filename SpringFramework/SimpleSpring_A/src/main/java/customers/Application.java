@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application {
 	public static void main(String[] args) {
+//		setter injection --> create context based on XML file
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"springconfig.xml");
 		ICustomerService customerService = context.getBean("customerService",

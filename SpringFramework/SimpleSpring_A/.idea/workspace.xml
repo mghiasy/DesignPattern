@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d71e3130-16d2-46dc-a672-9f0a6cb51abe" name="Default Changelist" comment="" />
+    <list default="true" id="d71e3130-16d2-46dc-a672-9f0a6cb51abe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customers/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customers/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/customers/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springconfig.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1aVVaoQuj4I4AEiGtf2p38tazUk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -16,6 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -51,6 +70,7 @@
       <updated>1586820814047</updated>
       <workItem from="1586820817602" duration="1165000" />
       <workItem from="1586830076209" duration="9000" />
+      <workItem from="1586903449717" duration="511000" />
     </task>
     <servers />
   </component>
@@ -58,6 +78,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="533" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1586903785107">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="533" y="156" key="#com.intellij.ide.util.MemberChooser/0.23.1440.820@0.23.1440.820" timestamp="1586903785107" />
     <state width="1398" height="264" key="GridCell.Tab.0.bottom" timestamp="1586830084833">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

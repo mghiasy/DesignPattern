@@ -3,6 +3,11 @@ package customers;
 public class CustomerDAO implements ICustomerDAO{
 	//private ILogger logger = new Logger();
 	private ILogger logger;
+//for constructor injection
+	public CustomerDAO(ILogger logger) {
+		this.logger = logger;
+	}
+
 	public void save(Customer customer) {
 		// simple sleep
 		try {
@@ -14,7 +19,7 @@ public class CustomerDAO implements ICustomerDAO{
 		logger.log("Customer is saved in the DB: "+ customer.getName() );
 	}
 
-	public void setLogger(ILogger logger) {
-		this.logger=logger;
-	}
+	//can create a constructor and use const injection
+	//Setter methods for injection
+	//public void setLogger(ILogger logger) { this.logger=logger; }
 }

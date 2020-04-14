@@ -1,6 +1,7 @@
 package customers;
 
 public class CustomerService implements ICustomerService {
+	//Here we have to attr and should inject them via setter method
 	ICustomerDAO customerDAO ;//= new CustomerDAO();
 	IEmailSender emailSender ;//= new EmailSender();
 
@@ -13,6 +14,7 @@ public class CustomerService implements ICustomerService {
 		emailSender.sendEmail(email, "Welcome " + name + " as a new customer");
 	}
 
+	//Setter methods for injection
     public void setCustomerDAO(CustomerDAO customerDAO) {
 		this.customerDAO=customerDAO;
     }
