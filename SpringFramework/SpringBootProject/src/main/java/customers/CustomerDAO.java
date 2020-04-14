@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Profile("One")
+//@Profile("One")
 public class CustomerDAO implements ICustomerDAO{
 	//private ILogger logger = new Logger();
 	private ILogger logger;
@@ -19,7 +19,6 @@ public class CustomerDAO implements ICustomerDAO{
 		System.out.println("CustomerDAO: saving customer "+customer.getName());
 		logger.log("Customer is saved in the DB: "+ customer.getName() );
 	}
-
 	@Autowired
 	public void setLogger(ILogger logger) {
 		this.logger=logger;

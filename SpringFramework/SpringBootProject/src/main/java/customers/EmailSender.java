@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class EmailSender implements IEmailSender {
 	String outgoingMailServer = "smtp.acme.com";
-	private ILogger logger = new Logger();
+	private ILogger logger;
 
 	public String getOutgoingMailServer() {
 		return outgoingMailServer;
@@ -17,7 +17,7 @@ public class EmailSender implements IEmailSender {
 		logger.log("Email is sent: message= "+message +" , emailaddress ="+ email  );
 	}
 	@Autowired
-    public void setLogger(Logger logger) {
+    public void setLogger(ILogger logger) {
 		this.logger=logger;
     }
 }
