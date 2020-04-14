@@ -2,9 +2,10 @@ package customers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+//for class path scanning
 @Service
 public class CustomerService implements ICustomerService {
+	//can also put AutoWire annotation here --> But not recommended ??
 	ICustomerDAO customerDAO ;//= new CustomerDAO();
 	IEmailSender emailSender ;//= new EmailSender();
 

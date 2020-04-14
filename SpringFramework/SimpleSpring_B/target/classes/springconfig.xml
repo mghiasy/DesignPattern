@@ -7,6 +7,10 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+<!--	Dependency injection with classpath scanning-->
+<!--	we dont configure all the beans in the XML-->
+
+<!--	Do class path scanning for all the classes in package customer-->
 	<context:component-scan base-package="customers"/>
 	<context:annotation-config />
 </beans>

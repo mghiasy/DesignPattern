@@ -3,6 +3,7 @@ package customers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+//for class path scanning
 @Repository
 public class CustomerDAO implements ICustomerDAO{
 	//private ILogger logger = new Logger();
