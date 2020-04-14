@@ -5,9 +5,10 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 @Repository
-//@Profile("One")
+@Profile("Production")
 public class CustomerDAO implements ICustomerDAO{
 	//private ILogger logger = new Logger();
+
 	private ILogger logger;
 	public void save(Customer customer) {
 		// simple sleep
@@ -24,3 +25,4 @@ public class CustomerDAO implements ICustomerDAO{
 		this.logger=logger;
 	}
 }
+//customers.CustomerDAO required a bean of type 'customers.ILogger' that could not be found.
